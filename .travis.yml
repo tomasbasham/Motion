@@ -1,0 +1,18 @@
+---
+language: cpp
+sudo: false
+
+env:
+  - PLATFORM=arduino:avr:leonardo
+  - PLATFORM=arduino:avr:uno
+  - PLATFORM=arduino:sam:arduino_due_x
+  - PLATFORM=arduino:samd:arduino_zero_native
+
+matrix:
+  fast_finish: true
+
+before_install:
+  - source <(curl -SLs https://gist.githubusercontent.com/tomasbasham/e9ace873c23f8f0f00cd31b22f141111/raw) # install.sh
+
+script:
+  - build_examples
