@@ -16,3 +16,8 @@ before_install:
 
 script:
   - build_examples
+
+notifications:
+  email: false
+  slack:
+    secure: "qiOWt2ODAbSENja5yyx6sBFzuRkkuVme8I3WI+gBEDZBAcHsPXwAZ3zQsjoo6a+RdJHJHBz3xxV163R8b/uKmS++VAbzJNvaMqPbfvOn9wNDY+BgmCec8GAZACByJSHi25mTr/9wJzTvkH6RcVw+/KfV3casuZxHjxEXPfW+Rks="

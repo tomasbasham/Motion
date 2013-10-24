@@ -1,0 +1,11 @@
+version: '2'
+services:
+  travis:
+    image: tomasbasham/travis:1.8.2
+    volumes:
+      - travis-data:/root/.travis
+      - .:/usr/src/app
+
+volumes:
+  travis-data:
+    external: true
